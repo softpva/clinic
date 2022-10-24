@@ -14,23 +14,23 @@ The app can be called at command line using the syntax:
 The language option will set several conditions, for example the search of zip or cep code in US or Brazil, respectively, or the local date configurations. (see bellow)
 
 The main page - Patients Register (for English users):  
-![Main Page Image](src\images\main_page.gif)
+![Main Page Image](/src/images/main_page.gif)
 
 
 The main page - Patients Register (for Portuguese users):  
-![Imagem da tela principal](src\images\tela_principal.gif) 
+![Imagem da tela principal](src/images/tela_principal.gif) 
 
 If the doctor button is clicked, the follow new screen will appear:
-![Doctors register page](src\images\doctor_page.gif)
+![Doctors register page](src/images/doctor_page.gif)
 
 If the Appointments button is clicked, the follow new screen will appear:
-![Doctors register page](src\images\appoint_page.gif)
+![Doctors register page](src/images/appoint_page.gif)
 
 And, at the end, if you click on the Save Excel button at the main page, an excel file xlsx will be generated with two tabs, one with the patient registers and another with the respective medical appointments, as example images below:  
 
-![patients's sheet](src\images\patients_xlsx.gif)  
-![appointments's sheet](src\images\appointments_xlsx.gif)  
-![doctors's sheet](src\images\doctors_xlsx.gif)
+![patients's sheet](src/images/patients_xlsx.gif)  
+![appointments's sheet](src/images/appointments_xlsx.gif)  
+![doctors's sheet](src/images/doctors_xlsx.gif)
 
 
 

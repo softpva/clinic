@@ -13,16 +13,25 @@ from consultas import Consultas
 
 Debug = False
 
-# TODO: refactor, docs, upload to GitHub
+# TODO: refactor, docs.
 
 
 class MainWin(tk.Tk):
-    def __init__(self, args):
+    '''
+        This the main class to app that can register patients, doctors and its respectively  appointments for an hypothetical medical clinic.
 
-        # USE <python main.py en database_name> TO SET LANGUAGE TO ENGLISH and set the database name.
+        To start it use: python main.py language database
+        Where:
+            language can be 'en' or 'pt (if omitted pt it'll be used )
+            database it is the database name, if omitted 'clinic.db' it'll be used.
+
+        read readme.md for more information.    
+    '''
+    def __init__(self, args):
+        
         self.db_name = 'clinic.db'       
         if len(args) > 1:
-            # add your language if you need
+            # add your language if needed
             match args[1].upper():
                 case 'EN':  self.lang= 1 # English                
                 case   _ :  self.lang= 0 # Portuguese Pt-Br            
@@ -61,7 +70,7 @@ class MainWin(tk.Tk):
         ttk.Label(self.frm, text=['Fone: ','Phone: '][self.lang]).grid(row=2, column=0, pady=5, sticky=tk.W)
         self.fone = tk.StringVar()
         ttk.Entry(self.frm,width=20, textvariable=self.fone).grid(row=2, column=1, sticky=tk.W)
-        # INSURENCE:
+        # INSURANCE:
         ttk.Label(self.frm, text=['Convenio: ','Insurance: '][self.lang]).grid(row=2, column=2, padx=25, pady=5, sticky=tk.W)
         self.convenio = tk.StringVar()
         self.convenio_entry = ttk.Combobox(self.frm, width=19, textvariable=self.convenio)
