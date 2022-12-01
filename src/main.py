@@ -279,7 +279,7 @@ class MainWin(tk.Tk):
         self.db.commit()       
         pacientes_cadastrados = pd.DataFrame(pacientes_cadastrados, columns=[['id_bd','nome','fone','convenio','cartão','sexo','email','nascimento','endereço','cidade','cep','obs'],['id_bd','name','phone','insurance','card number','genre','email','birth day','address','city','zip','note']][self.lang])
         consultas_cadastradas = pd.DataFrame(consultas_cadastradas, columns=[['paciente','medico','id_db','data','status','observação','id_paciente','id_medico'],['patient','doctor','id_db','date','status','note','id_patient','id_doctor']][self.lang])
-        medicos_cadastrados = pd.DataFrame(medicos_cadastrados,columns = [['id_db','nome','fone','especialidade','crm','observações'],['id_db','name','phone','specialty','register','notes']][self.lang])
+        medicos_cadastrados = pd.DataFrame(medicos_cadastrados,columns = [['id_db','nome','fone','especialidade','crm','observações'],['id_db','name','phone','speciality','register','notes']][self.lang])
         print('Appointments: ',consultas_cadastradas) if debug or Debug else ...
         with pd.ExcelWriter([f'registros_pacientes_{self.db_name[:-3]}.xlsx',f'patients_records_{self.db_name[:-3]}.xlsx'][self.lang]) as writer:
             pacientes_cadastrados.to_excel(writer,sheet_name=['pacientes','patients'][self.lang])
