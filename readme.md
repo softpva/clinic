@@ -1,4 +1,4 @@
-# **A Simple Clinic Application in Python**
+# **A Simple CRUD Clinic Application in Python**
 [![en](https://img.shields.io/badge/lang-en-red.svg)](./README.md)
 [![pt-br](https://img.shields.io/badge/lang-pt--br-green.svg)](./README.pt-br.md)
 [![es](https://img.shields.io/badge/lang-es-yellow.svg)](./README.es.md)
@@ -12,8 +12,8 @@
 > - CRUD (Create,Read,Update,Delete) patients.
 > - CRUD doctors.
 > - CRUD appointments.
-> - Access in English and Portuguese.
-> - Use any name to databases, ie: 2023_database
+> - Access in English or Portuguese.
+> - Use any name to databases, eg: 2023_database
 > - Export to excel
 > - Search automatically zip code from Brazil and USA.
 
@@ -25,10 +25,10 @@
 > ## The main page - Patients Register (in Portuguese)
 > ![Imagem da tela principal](src/images/tela_principal.gif)  
 
-> ## If the doctor button is clicked on main page
+> ## After the doctor button is clicked on main page
 > ![Doctors register page](src/images/doctor_page.gif)  
 
-> ## If the Appointments button is clicked on main page
+> ## After the Appointments button is clicked on main page
 > ![Doctors register page](src/images/appoint_page.gif)  
 
 > ## Save to excel
@@ -41,7 +41,7 @@
 > ![doctors's sheet](src/images/doctors_xlsx.gif)
 
 # Models
-> ## clinic.bd model
+> ## Database model
 > ![Doctors register page](src/images/model.gif) 
 
 # Tecnologies
@@ -61,7 +61,7 @@
 >
 > - Where:  
 > - 'language' can be: 'en' or 'pt' (if omitted 'pt' it'll be default)  
->    The language option will set several conditions, for example the search of zip or cep code in US or Brazil, respectively, or the local date configurations.
+>    The language option will set several conditions, for example the search of zip code or cep in US or Brazil, respectively, and  the local date configurations.
 > - 'database' is the name of SQLite database to be read or to be created. (if omitted 'clinic.db' it'll be used)
 
 
