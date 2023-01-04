@@ -15,7 +15,7 @@
 > - Acesso em inglês ou em português.
 > - Use qualquer nome para o banco de dados, eg: 2023_database
 > - Exporte para o excel
-> - Busca automática de CEP ou zip code para o Brazil ou para os USA.
+> - Busca automática de endereços pelo CEP ou zip code para o Brazil ou para os USA.
 
 # Layouts
 > ## Página principal - Pacientes (em inglês)
@@ -52,6 +52,9 @@
 >     - SQL.
 >     - ISO8601.py para manipulação de horas e datas.
 >     - Internacionalização.
+> - APIs:
+>     - Busca via cep: https://viacep.com.br
+>     - Busca via zip: https://api.zippopotam.us/us
 
 # Rodando o app
 > - O aplicativo pode ser chamado na linha de comando com a seguinte sintaxe:  
@@ -60,7 +63,7 @@
 >
 > - Onde:  
 > - 'idioma' pode ser: 'en' ou 'pt' (se omitido 'pt' será o idioma adotado)  
->    A fixação do idioma configurará várias condições, por exemplo, a busca do cep ou zip code, respectivamente, no Brasil e nos Estado Unidos, bem como as configurações locais de data e hora.
+>    A fixação do idioma configurará várias condições, por exemplo, a busca do cep ou zip code, respectivamente, no Brasil e nos Estado Unidos, convênios médicos, bem como as configurações locais de data e hora.
 > - 'database' é o nome do banco de dados em SQLite a ser lido ou criado. (se omitido 'clinic.db' será utilizado)
 
 # Versão pró

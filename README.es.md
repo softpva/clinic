@@ -15,7 +15,7 @@
 > - Acceso en inglés o portugués.
 > - Use cualquier nombre para la base de datos, por ejemplo: 2023_database
 > - Exportar a excel
-> - Búsqueda automática por código postal o zip code para Brasil o USA.
+> - Búsqueda automática de dirección por código postal o zip code para Brasil o USA.
 
 # diseños
 > ## Página principal - Pacientes (en inglés)
@@ -52,6 +52,9 @@
 >     - Sql.
 >     - ISO8601.py para manejo de tiempos y fechas.
 >     - Internacionalización.
+> - APIs:
+>     - Buscar por cep: https://viacep.com.br
+>     - Buscar por zip: https://api.zippopotam.us/us
 
 # Ejecutar la aplicación
 > - La aplicación se puede invocar desde la línea de comando con la siguiente sintaxis:
@@ -60,7 +63,7 @@
 >
 > - Donde:
 > - 'idioma' puede ser: 'en' o 'pt' (si se omite 'pt' será el idioma adoptado)
-> Al configurar el idioma, se configurarán varias condiciones, por ejemplo, la búsqueda del código postal o zip code, respectivamente, en Brasil y Estados Unidos, así como la configuración de fecha y hora local.
+> Al configurar el idioma, se configurarán varias condiciones, por ejemplo, la búsqueda del código postal o zip code, respectivamente, en Brasil y Estados Unidos, acuerdos médicos, así como la configuración de fecha y hora local.
 > - 'database' es el nombre de la base de datos SQLite para se  leer o crear. (si se omite, se utilizará 'clinic.db')
 
 # versión Pro

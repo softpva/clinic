@@ -15,7 +15,7 @@
 > - Access in English or Portuguese.
 > - Use any name to databases, eg: 2023_database
 > - Export to excel
-> - Search automatically zip code from Brazil and USA.
+> - Search address automatically by zip code from Brazil and USA.
 
 
 # Layouts
@@ -53,6 +53,9 @@
 >     - SQL commands.
 >     - ISO8601.py to date/time manipulation.
 >     - Internationalization.
+> - APIs:
+>     - Search by cep: https://viacep.com.br
+>     - Search by zip: https://api.zippopotam.us/us
 
 # Kick off
 > - The app can be called at command line using the syntax:  
@@ -61,7 +64,7 @@
 >
 > - Where:  
 > - 'language' can be: 'en' or 'pt' (if omitted 'pt' it'll be default)  
->    The language option will set several conditions, for example the search of zip code or cep in US or Brazil, respectively, and  the local date configurations.
+>    The language option will set several conditions, for example the search of zip code or cep in US or Brazil, respectively, medical insurances, and  the local date configurations.
 > - 'database' is the name of SQLite database to be read or to be created. (if omitted 'clinic.db' it'll be used)
 
 
